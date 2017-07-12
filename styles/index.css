@@ -1,0 +1,104 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background: #F5F5F5;
+}
+
+header {
+  text-align: center;
+  padding: 50px 25px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+header.running {
+  transition: background 0.9s;
+}
+
+.time-status {
+  font-size: 70px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+}
+
+.time-status hr {
+  border: none;
+  border-bottom: solid 1px #000;
+  margin: 0 auto;
+}
+
+#timer-list {
+  flex: 1;
+  width: 100%;
+  border-spacing: 0;
+}
+
+#timer-list tr {
+  cursor: pointer;
+}
+
+#timer-list tr.active td {
+  background: #00b0ff;
+  border-bottom-color: #00b0ff;
+}
+
+#timer-list tr.selected td,
+#timer-list tr:hover td {
+  background: #69e2ff;
+  border-bottom-color: #69e2ff;
+}
+
+#timer-list tr.active td,
+#timer-list tr.selected td,
+#timer-list tr:hover td {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+#timer-list td {
+  padding: 25px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#timer-list td:first-child {
+  padding-left: 30px;
+}
+
+#timer-list td:first-child p {
+  margin: 0;
+}
+
+#timer-list td:first-child .task-title {
+  font-weight: 600;
+}
+
+#timer-list td:first-child .task-summary {
+  font-size: 12px;
+}
+
+#timer-list td:last-child {
+  padding-right: 30px;
+}
+
+#timer-list td:nth-child(2),
+#timer-list td:nth-child(3) {
+  width: 65px;
+  text-align: center;
+}
+
+#timer-list td:nth-child(3) {
+  width: 25px;
+  font-size: 12px;
+}

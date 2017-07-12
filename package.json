@@ -1,0 +1,19 @@
+{
+  "name": "active-collab-timer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron -r babel-register ."
+},
+  "author": "Sean Templeton",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "keymaster": "^1.6.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
